@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+:root{
+	--bg-color: #f0f0f3;
+	--bg-color-2: #fff;
+	--color: #333;
+	--border-1: rgba(0,0,0,.125);
+
+	--prop-bg: #009e9b;
+	--prop-color: #fff;
+}
+
+[data-theme="dark"] {
+    --color: #fff;
+    --bg-color: #171a1c;
+    --bg-color-2: #212529;
+    --border-1: #171a1c;
+    --border-2: #212529;
+    
+}
+*{
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+body {
+	background-color: var(--bg-color) !important;
+}
+.card {
+	background-color: var(--bg-color-2) !important;
+	border:1px solid var(--border-1) !important;
+	color: var(--color) !important;
+
+}
+.box {
+	background-color: var(--bg-color-2);
+	border: 5px solid var(--border-1);
+	color: var(--color);
+}
+.nav-item .active{
+	background-color: var(--prop-bg) !important; 
+}
+.nav-item .active:hover{
+	color: var(--color) !important;
+}
+.nav-item .nav-link {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+input[name=s] {
+	background-color: var(--bg-color);
+	border: 1px solid var(--border-1);
+	color: var(--dark-color);
+	padding: .3rem .75rem;
+}
+input[name=s]:focus {
+	background-color: var(--bg-color);
+	border: 1px solid var(--border-1);
+	color: var(--color);
+	padding: .3rem .75rem;
+}
+.card a{
+	cursor: pointer !important;
+}
+.list {
+	/*opacity: 75%;*/
+	background-color: var(--bg-color) !important;
+	color: var(--color) !important;
+	transition: 0.8s;
+}
+.list:hover {
+	color: var(--prop-bg) !important;
+	/*opacity: 100%;*/
+	background-color: var(--bg-color) !important;
+	transition: 0.5s;
+}
+
+.okoklh p{
+	padding: 5px 5px;
+	background-color: rgba(0, 158, 155,1) !important;
+	color: #fff;
+	/*font-size: 13px !important;*/
+}
+.okoklh a{
+	color: #fff !important;
+}
+.okoklh a:hover{
+	color: #fff !important;
+}
+.ser a {
+	text-decoration: none !important; 
+	color: #333 !important;
+}
+.ser a:hover {
+	text-decoration: underline !important;
+	color: #333 !important;
+}
+
+.pagination .page-link{
+	background-color: var(--bg-color-2) !important;
+	color: var(--color) !important;
+	border: 1px solid var(--border-1) !important;
+}
+.download {
+	background-color: var(--bg-color) !important;
+}
+.download .ser {
+	background-color: var(--bg-color-2) !important;
+} 
+.download .ser a{
+	color: var(--color) !important;
+}
+.download .box1 {
+	background-color: var(--prop-bg) !important;
+	color: var(--prop-color) !important;
+}
+
+
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
